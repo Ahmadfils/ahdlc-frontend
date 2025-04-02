@@ -54,7 +54,7 @@ header nav ul li a::after {
 }
 
 header nav ul li a:hover::after {
-    width: 10git 0%;
+    width: 100%;
 }
 
 
@@ -114,7 +114,6 @@ header nav ul li a:hover::after {
     width: 150px;
     padding: 15px;
     background-color: #e0f7fa;
-    border-radius: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     align-items: center;
@@ -170,13 +169,29 @@ header nav ul li a:hover::after {
 }
 
 .actualites .voir-plus {
-    display: block;
+    display: inline-block;
     text-align: center;
     margin-top: 30px;
-    color: #00aaff;
+    color: white;
     font-weight: bold;
     text-decoration: none;
+    padding: 5px 5px;
+    width: 100px;
+    background-color: #00aaff;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
+
+.voir-plus:hover {
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    opacity: 50%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
 
 /* Section À Propos */
 .a-propos {
@@ -314,6 +329,9 @@ footer a:hover {
     color: rgba(0, 170, 255, 0.6);
 }
 
+
+
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .services .qualities {
@@ -411,7 +429,7 @@ footer a:hover {
 
 /* Affichage du menu au survol */
 .dropdown:hover .dropdown-menu {
-    display: block;
+    display: none;
 }
 
 /* Style du titre avec lignes de chaque côté */
@@ -442,12 +460,12 @@ footer a:hover {
     /* Caché par défaut */
     font-size: 20px;
     cursor: pointer;
-    padding: 5px;
+    padding: 2px 5px;
     background: #00aaff;
     color: white;
     border-radius: 5px;
     position: absolute;
-    top: 2px;
+    top: 5px;
     right: 15px;
 }
 
