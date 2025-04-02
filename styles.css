@@ -37,7 +37,6 @@ header nav ul li a {
     padding: 5px 10px;
     position: relative;
     font-size: 20px;
-    font-weight: bold;
     padding-bottom: 5px;
 }
 
@@ -173,7 +172,6 @@ header nav ul li a:hover::after {
     text-align: center;
     margin-top: 30px;
     color: white;
-    font-weight: bold;
     text-decoration: none;
     padding: 5px 5px;
     width: 100px;
@@ -413,7 +411,7 @@ footer a:hover {
 }
 
 .dropdown-menu li {
-    padding: 12px 16px;
+    padding: 10px 10px;
     text-align: left;
 }
 
@@ -423,9 +421,6 @@ footer a:hover {
     display: block;
 }
 
-.dropdown-menu li a:hover {
-    background-color: #00aaff;
-}
 
 /* Affichage du menu au survol */
 .dropdown:hover .dropdown-menu {
@@ -482,13 +477,12 @@ footer a:hover {
         flex-direction: column;
         background: #afc3ce;
         position: absolute;
-        top: 60px;
+        top: 40px;
         right: 0;
         width: 100%;
         text-align: center;
         padding: 10px 0;
         z-index: 1000;
-        /* Pour être au-dessus du contenu */
     }
 
     nav ul {
@@ -499,7 +493,7 @@ footer a:hover {
 
     nav ul li,
     nav .dropdown {
-        width: 50%;
+        width: 100%;
         padding: 10px;
         text-align: left;
     }
