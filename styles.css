@@ -275,8 +275,9 @@ header nav ul li a:hover::after {
 }
 
 .grid-item img {
-    height: 250px;
-    width: 100%;
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
 }
 
 /* Footer */
@@ -464,6 +465,10 @@ footer a:hover {
     right: 15px;
 }
 
+nav.active {
+    display: flex !important;
+}
+
 /* Styles du menu en version mobile */
 @media screen and (max-width: 768px) {
     .menu-toggle {
@@ -517,6 +522,10 @@ footer a:hover {
         color: #afc3ce;
     }
 
+    .footer-content {
+        margin: 0px 10px;
+    }
+
     /* Affichage du menu quand il est actif */
     nav.active {
         display: flex !important;
@@ -526,4 +535,33 @@ footer a:hover {
 .icon img {
     width: 100px;
     height: 100px;
+}
+
+@media screen and (min-width: 769px) {
+    nav {
+        display: flex !important;
+        justify-content: center;
+        /* Centre le menu */
+        align-items: center;
+        position: static;
+        width: 100%;
+        background: none;
+        /* Rétablir l'arrière-plan par défaut */
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
 }

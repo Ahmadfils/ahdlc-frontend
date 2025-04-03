@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             menu.style.display = 'none';
         });
     });
+
 });
 
 // Gestion du menu mobile (toggle menu)
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navMenu = document.getElementById("nav-menu");
 
     menuToggle.addEventListener("click", function (event) {
-        event.stopPropagation(); 
+        event.stopPropagation();
 
         navMenu.style.display = (navMenu.style.display === "flex") ? "none" : "flex";
     });
@@ -56,3 +57,4 @@ document.querySelectorAll(".grid-item").forEach(div => {
         window.location.href = this.getAttribute("data-url");
     });
 });
+
