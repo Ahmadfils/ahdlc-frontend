@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navMenu = document.getElementById("nav-menu");
 
     menuToggle.addEventListener("click", function (event) {
-        event.stopPropagation(); // Empêche la fermeture immédiate lors du clic sur le bouton
+        event.stopPropagation(); 
 
         navMenu.style.display = (navMenu.style.display === "flex") ? "none" : "flex";
     });
