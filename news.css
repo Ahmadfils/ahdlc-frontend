@@ -175,3 +175,7 @@ body {
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
+.news-item:hover img {
+    filter: brightness(0.9);
+}
