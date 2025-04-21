@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Action Humanitaire</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -20,23 +22,29 @@
     </header>
 
     <!-- Section de contact -->
-    <section class="contact-section">
-        <!-- Colonne image -->
-        <div class="contact-image">
-            <img src="images/helping.png" alt=" Contactez-nous">
-        </div>
-
-        <!-- Colonne formulaire -->
+    <div class="contact-section">
+        <div class="contact-image"></div>
+    
         <div class="contact-form">
             <h3>Envoyez-nous un message</h3>
             <form>
-                <input type="text" placeholder="Votre nom" required>
-                <input type="email" placeholder="Votre email" required>
-                <textarea placeholder="Votre message" required></textarea>
+                <div class="input-icon">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Nom complet" required>
+                </div>
+                <div class="input-icon">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Adresse e-mail" required>
+                </div>
+                <div class="input-icon">
+                    <i class="fas fa-comment"></i>
+                    <textarea placeholder="Votre message" required></textarea>
+                </div>
                 <button type="submit">Envoyer</button>
             </form>
         </div>
-    </section>
+    </div>
+    
 
 
     <!-- Informations de contact -->
