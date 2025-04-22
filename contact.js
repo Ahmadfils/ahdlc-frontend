@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-// Gestion de l'accordéon FAQ
-const faqItems = document.querySelectorAll('.faq-item');
 
-faqItems.forEach(item => {
+const faqItems1 = document.querySelectorAll('.faq-item');
+
+faqItems1.forEach(item => {
   item.addEventListener('click', () => {
     item.classList.toggle('active');
     const answer = item.querySelector('.faq-answer');
@@ -29,11 +29,11 @@ faqItems.forEach(item => {
 
     // Change the icon to chevron-down (or caret-up) based on the state
     if (item.classList.contains('active')) {
-      icon.classList.remove('fa-caret-up');
+      icon.classList.remove('fa-caret-right');
       icon.classList.add('fa-chevron-down');
     } else {
       icon.classList.remove('fa-chevron-down');
-      icon.classList.add('fa-caret-up');
+      icon.classList.add('fa-caret-right');
     }
   });
 });
